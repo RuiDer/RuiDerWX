@@ -1,0 +1,44 @@
+.container{
+  background-color:floralwhite;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.ruider-cf {
+  position: absolute;
+  top:2.2cm;
+  color: red;
+}
+.ruider-cg{
+  height: 2cm;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top:1cm;
+  left: 0.1cm;
+  border-bottom: 0.1cm double silver;
+}
+
+.ruider-cl{
+  margin-left:0.7cm;
+  border:0.1cm double silver;
+  height:0.8cm;
+}
+
+.ruider-cj{
+  margin-left:0.7cm;
+  border:0.1cm double silver;
+  border-bottom: 0.1cm double red;
+  height:0.8cm;
+}
+
+.ruider-ch{
+  position: absolute;
+  top: 3cm;
+}
+
+.newOrder{
+  text-align: left;
+  text-decoration:blink;
+}

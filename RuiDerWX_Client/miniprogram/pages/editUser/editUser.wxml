@@ -1,0 +1,74 @@
+<!--pages/myinfo/myinfo.wxml-->
+<form bindsubmit="formSubmit">
+<view class="weui-cells weui-cells_after-title">
+ 
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">昵称</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="userName" disabled='disabled' placeholder="" value="{{dataFromMyList.nickName}}"/>
+                </view>
+            </view>
+ 
+              <view class="weui-cell weui-cell_input">
+                  <view class="weui-cell__hd">
+                      <view class="weui-label">签名</view>
+                  </view>
+                  <view class="weui-cell__bd">
+                      <input class="weui-input" name="autograph"  placeholder="请输入签名" value='{{dataFromMyList.autograph}}' />
+                  </view>
+              </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="realName" placeholder="请输入姓名" value='{{dataFromMyList.realName}}' />
+                </view>
+            </view>
+            
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">性别</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="sex" disabled='disabled' value='{{sex}}'/>
+                </view>
+                <!--<view class="weui-cell__ft">
+                       <switch checked bindchange='switchChange'/>
+                </view>-->
+            </view>
+ 
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">年龄</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="age"  placeholder="请输入年龄" value='{{dataFromMyList.age}}' />
+                </view>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">手机号</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="mobilePhone"  placeholder="请输入手机号" value='{{dataFromMyList.mobilePhone}}' />
+                </view>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">住址</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="headerUrl"  placeholder="请输入地址" value='{{dataFromMyList.headurl}}' />
+                </view>
+            </view>
+        </view>
+        <view class="btn-area">
+         <button type='primary' formType="submit">提交</button>
+         </view>
+        </form>

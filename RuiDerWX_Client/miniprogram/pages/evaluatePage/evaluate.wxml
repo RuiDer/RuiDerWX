@@ -1,0 +1,13 @@
+<form bindsubmit="formSubmit">
+    <view class='place-holder' style="border: 1px solid #FFA6A6; border-radius: 10px;">
+          <textarea placeholder-class="place-holder"  placeholder="请输入内容"                                    name="content" maxlength='300' bindinput='limit' value="" style="font-size: 14px;"/>
+
+          <!-- 显示字数 -->
+          <view class="weui-cell__bd" class="clear"><text style="color: #ccc; font-size: 14px; float:               right; margin-right: 2%;">{{current}} / {{max}} （最多可写300字）</text>
+          </view>
+    </view>
+    <view class='leaveWords'> 
+          <button type='primary' formType="submit" wx:if='{{categoryId==1}}'>申请</button>
+          <button type='primary' formType="submit" wx:if='{{categoryId==2}}'>发表</button>
+    </view>
+</form>

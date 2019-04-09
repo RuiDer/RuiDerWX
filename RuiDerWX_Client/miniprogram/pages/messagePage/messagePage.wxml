@@ -1,0 +1,16 @@
+<view class='container'>
+    <view class='ruider-cf' wx:if='{{allNoWatchedNo!=0}}'>你有{{allNoWatchedNo}}条消息未读</view>
+    <view class='ruider-cg'>
+        <view class='ruider-cj' wx:if='{{applyNo!=0 }}' bindtap='getMessageList' data-id='1' data-isreply='0'>申请 {{applyNo}}</view>
+        <view class='ruider-cl' wx:else bindtap='getMessageList' data-id='1' data-isreply='0'>申请</view>
+        <view class='ruider-cj' wx:if='{{evaluateNo!=0 }}' bindtap='getMessageList' data-id='2' data-isreply='1'>评论 {{evaluateNo}}</view>
+        <view class='ruider-cl' wx:else bindtap='getMessageList' data-id='2' data-isreply='1'>评论</view>
+        <view class='ruider-cj' wx:if='{{overTimeNo!=0 }}' bindtap='getMessageList' data-id='3' data-isreply='0'>过期 {{overTimeNo}}</view>
+        <view class='ruider-cl' wx:else bindtap='getMessageList' data-id='3' data-isreply='0'>过期</view>
+        <view class='ruider-cj' wx:if='{{overNumberNo!=0 }}' bindtap='getMessageList' data-id='4' data-isreply='0'>人员满{{overNumberNo}}</view>
+        <view class='ruider-cl' wx:else bindtap='getMessageList' data-id='4' data-isreply='0'>人员满</view>
+    </view>
+    <view class='ruider-ch'>
+        <view class='newOrder'>最新推送</view>
+    </view>
+</view>

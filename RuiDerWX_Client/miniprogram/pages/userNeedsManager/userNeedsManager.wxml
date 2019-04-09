@@ -1,0 +1,42 @@
+<view class="table">
+  <view class='myNeeds'>我的需求</view>
+  <block wx:for='{{threeArray}}' wx:key='*this' wx:for-item='oneArray'>
+<!-- 注意嵌套的数组对象 -->
+      <view class="table-tr" wx:if='{{index<1}}'>
+        <block wx:for='{{oneArray}}' wx:key='id'>
+          <view class="table-th" wx:if='{{isAll== 1}}'>
+            <view class="table-th" bindtap='jumpAppointCategory' data-categoryId='{{item.categoryId}}'>[{{category[item.categoryId-1]}}]</view>
+          </view>
+          <view class="table-th">[{{item.title}}]</view>
+          <view class="table-th">{{item.content}} </view>
+          <view class="table-th">Time: {{item.startTime}} ~ {{item.deadline}}</view>
+          <view class="table-th">人数限制：{{item.limitNo}}</view>
+          <view class="table-th">联系方式:qq{{item.qq}} 微信{{item.weChat}}</view>
+          <view class="table-th">
+            <view class='table-tl'>
+              <view class="table-ti" bindtap='editNeeds' data-id='{{item.id}}'>编辑</view>
+              <view class="table-ti" bindtap='deleteNeeds' data-id='{{item.id}}'>删除</view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class="table-tr" wx:else>
+        <block wx:for='{{oneArray}}' wx:key='id'>
+          <view class="table-td" wx:if='{{isAll== 1}}'>
+            <view class="table-td" bindtap='jumpAppointCategory' data-categoryId='{{item.categoryId}}'>[{{category[item.categoryId-1]}}]</view>
+          </view>
+          <view class="table-td">[{{item.title}}]</view>
+          <view class="table-td">{{item.content}} </view>
+          <view class="table-td">Time: {{item.startTime}} ~ {{item.deadline}}</view>
+          <view class="table-td">人数限制：{{item.limitNo}}</view>
+          <view class="table-td">联系方式:qq{{item.qq}} 微信{{item.weChat}}</view>
+          <view class="table-td">
+            <view class='table-tl'>
+              <view class="table-ti" bindtap='editNeeds' data-id='{{item.id}}'>编辑</view>
+              <view class="table-ti" bindtap='deleteNeeds' data-id='{{item.id}}'>删除</view>
+            </view>
+          </view>
+        </block>
+      </view>
+  </block>
+</view>

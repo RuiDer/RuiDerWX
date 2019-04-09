@@ -1,0 +1,54 @@
+.container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.table-tr {
+  display: table-row;
+  position:absolute;
+  top:0%;
+  width: 100%;
+  height: 600rpx;
+}
+.timeShow{
+  margin-top: 0.4cm;
+}
+.needInfo {
+  border: 0.1cm dotted;
+}
+
+.approveOrRefuse {
+  margin-bottom: 1cm;
+}
+
+.approve {
+  position: absolute;
+  height: 1cm;
+  width: 50%;
+  left: 0cm;
+}
+
+.refuse {
+  position: absolute;
+  height: 1cm;
+  width: 50%;
+  right: 0cm;
+}
+
+.approved {
+  height: 1cm;
+  width: 100%;
+}
+
+.refused {
+  height: 1cm;
+  width: 100%;
+}
+
+.alreadyOverTime {
+  margin-bottom: 1cm;
+}
+.alreadyOverNumber {
+  margin-bottom: 1cm;
+}

@@ -1,0 +1,79 @@
+<!--miniprogram/pages/myList/myList.wxml-->
+<view class='my'>
+  <block>
+    <view class='notSignIn' wx:if="{{userId==null || userId == ''}}">
+      <view class='welcomeWords'>
+        <text class='welcomeWords'>欢迎登录一校同道</text>
+      </view>
+      <button class='SignInButton' bindtap='signIn'>点击登录</button>
+    </view>
+    <view class='signIn' wx:else>
+      <view class='userInfoLeft'>
+        <view class='userInfo-avater'>
+          <image class='userInfoIcon' src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class='userInfoDetails'>
+          <view class='userInfo-name'>{{userInfo.nickName}}</view>
+          <view wx:if="{{userInfo.gender}}==1" class="userinfo-gender">
+            <text class="userinfo-gender">男</text>
+          </view>
+          <view wx:else class="userinfo-gender">
+            <text class="userinfo-gender">女</text>
+          </view>
+        </view>
+      </view>
+      <view class='getUserDetails' bindtap='getUserDetails'>编辑</view>
+    </view>
+  </block>
+  <block>
+    <view class='actionBtn'>
+        <view class='user-mySend'>
+            <button  class='mySendMark' bindtap='getAllMyList'>我的帖子</button>
+        </view>
+        <view class='user-mySend'>
+            <button  class='addNew' bindtap='addNew'>新增</button>
+        </view>
+    </view>
+  </block>
+  <block>
+    <view class='user-mySendList1'>
+      <view class='carpooling'>
+        <view class='carpoolingIcon'>
+          <image class='carpoolingIcon' bindtap='carpoolingText' src='/images/拼车.jpg'></image>
+        </view>
+        <view class='carpoolingText'>
+          <text class='carpoolingText' bindtap='carpoolingText'>拼车</text>
+        </view>
+      </view>
+      
+      <view class='film'>
+        <view class='filmIcon'>
+          <image class='filmIcon' bindtap='filmText' src='/images/电影.jpg'></image>
+        </view>
+        <view class='filmText'>
+          <text class='filmText' bindtap='filmText'>电影</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='user-mySendList2'>
+      <view class='study'>
+        <view class='studyIcon'>
+          <image class='studyIcon' bindtap='studyText' src='/images/学习.jpeg'></image>
+        </view>
+        <view class='studyText'>  
+          <text class='studyText' bindtap='studyText'>学习</text>
+        </view>
+      </view>
+    
+      <view class='competition'>
+        <view class='competitionIcon'>
+          <image class='competitionIcon' bindtap='competitionText' src='/images/竞赛.jpeg'></image>
+        </view>
+        <view class='competitionText'>
+          <text class='competitionText' bindtap='competitionText'>竞赛</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

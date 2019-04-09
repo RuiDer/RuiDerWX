@@ -1,0 +1,106 @@
+<!--pages/myinfo/myinfo.wxml-->
+<form bindsubmit="formSubmit">
+      <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                  <view class="weui-cell__hd">
+                      <view class="weui-label">类型</view>
+                  </view>
+                  <!--<view class="weui-cell__bd">
+                      <input class="weui-input" name="category"  placeholder="请选择类型" value='' />
+                  </view>-->
+                  <picker class="weui-cell__bd" mode="selector" range="{{category}}" name="categoryId" value="{{index1}}"                                           bindchange="listenerPickerSelected">
+                       <text>{{category[index1]}}</text>
+                   </picker>
+
+              </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">标题</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="title"  placeholder="请输入标题" value=""/>
+                </view>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">内容</view>
+                </view>
+                <!--<view class="weui-cell__bd">
+                    <input class="weui-input" name="content" placeholder="请输入内容" value='' />
+                </view>-->
+                <view class='place-holder' style="border: 1px solid #FFA6A6; border-radius: 10px;">
+                    <textarea placeholder-class="place-holder"  placeholder="请输入需求内容"                                  name="content" maxlength='300' bindinput='limit' value="" style="font-size: 14px;"/>
+
+                      <!-- 显示字数 -->
+                    <view class="weui-cell__bd" class="clear"><text style="color: #ccc; font-size: 14px; float: right;                         margin-right: 2%;">{{current}} / {{max}} （最多可写300字）</text>
+                    </view>
+                </view>
+
+            </view>
+            
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">开始时间</view>
+                </view>
+                <!--<view class="weui-cell__bd">
+                    <input class="weui-input" name="startTime"  placeholder='请输入开始时间' value=''/>  
+                </view>-->
+                <picker class="weui-input" mode="date" name="startTime" value="{{startDate}}"        bindchange="listenerStartDatePickerSelected">
+                    <text>{{startDate}}</text>
+                </picker>
+            </view>
+ 
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">截止时间</view>
+                </view>
+                <!--<view class="weui-cell__bd">
+                    <input class="weui-input" name="deadline"  placeholder="请输入截止时间" value='' />
+                </view>-->
+                <picker class="weui-input" mode="date" name="deadline" value="{{deadline}}"         bindchange="listenerDeadlinePickerSelected">
+                    <text>{{deadline}}</text>
+                </picker>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">手机号</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="phoneNo"  placeholder="请输入手机号" value='' />
+                </view>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">人数限制</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="limitNo"  placeholder="请输入限制人数" value='' />
+                </view>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">qq</view>
+                </view>
+                <view class="weui-cell__bd">
+                        <input class="weui-input" name="qq"  placeholder="请输入QQ" value='' />
+                </view>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">微信</view>
+                </view>
+                <view class="weui-cell__bd">
+                        <input class="weui-input" name="weChat"  placeholder="请输入微信号" value='' />
+                </view>
+            </view>
+        </view>
+        <view class="btn-area">
+            <button type='primary' formType="submit">提交</button>
+        </view>
+</form>

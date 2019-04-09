@@ -1,0 +1,19 @@
+<!--miniprogram/pages/myList/myList.wxml-->
+<view class='container'>
+<!--流动图-->
+  <view>
+    <image class="streamView" src='/images/组队1.jpg'></image>
+  </view>
+  <!--类型列表-->
+  <view class="categoryList">
+      <view class='group' bindtap='carpoolingText'>拼车</view>
+      <view class='group' bindtap='competitionText'>竞赛</view>
+      <view class='group' bindtap='filmText'>电影</view>
+      <view class='group' bindtap='studyText'>学习</view>
+      <view class='group' bindtap='otherText'>其他</view>
+  </view>
+  <!--热门-->
+  <view class="hotSpot">
+    <image class="hotSpot" src='/images/组队2.jpg'></image>
+  </view>
+</view>

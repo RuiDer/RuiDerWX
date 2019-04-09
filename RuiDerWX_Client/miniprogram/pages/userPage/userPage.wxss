@@ -1,0 +1,180 @@
+.my{
+  background-color:floralwhite;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.notSignIn{
+  width: 100%;
+  height: 230rpx;
+  justify-content:space-between;
+  align-items: center;
+  background-color:orange
+}
+
+.welcomeWords{
+  text-align: center;
+  font-size: 25px;
+}
+
+.SignInButton {
+  font-size: 0.4cm;
+  position: static;
+  bottom: 0cm;
+  border: rgb(133, 153, 165);
+  width: 2.5cm;
+  background-color:floralwhite;
+}
+
+.signIn{
+  margin: 0 28rpx 0;
+  height: 230rpx;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.userInfoIcon{
+  width:80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userInfoLeft{
+  display: flex;
+}
+.userInfo-avater{
+  padding-right: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.userInfo-name{
+  font-weight: 700;
+}
+.userinfo-gender{
+  color: #A6A6A6;
+}
+
+/*我的帖子和新增*/
+.actionBtn {
+  flex-direction: row;
+  justify-content:space-between;
+  display: flex;
+  width:100%;
+  align-items: center;
+}
+/*我的帖子*/
+.mySendMark{
+  background-color:floralwhite;
+  height: 1cm;
+  position: absolute;
+  left: 0cm;
+  width: 50%;
+}
+
+.addNew{
+  background-color:floralwhite;
+  height: 1cm;
+  position: absolute;
+  right: 0cm;
+  width: 50%;
+}
+
+/*列表*/
+.user-mySendList1{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  border-color:rgb(245, 220, 228);
+  margin-bottom: 1cm;
+}
+/*拼车图片*/
+.carpoolingIcon{
+  width:300rpx;
+  height: 300rpx;
+  border-radius: 80%;
+  overflow: hidden;
+  margin-left: 0.3cm;
+}
+/*拼车文字*/
+.carpoolingText {
+  margin-top: 0.2cm;
+  margin-left: 0.8cm;
+  color:rgb(101, 101, 104);
+}
+/*电影图片*/
+.filmIcon {
+  width:300rpx;
+  height: 300rpx;
+  border-radius: 80%;
+  overflow: hidden;
+  margin-right: 0.3cm;
+}
+/*电影文字*/
+.filmText {
+  margin-top: 0.2cm;
+  margin-left:0.6cm;
+  color:rgb(101, 101, 104);
+}
+
+.user-mySendList2{
+  
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+/*学习*/
+.studyIcon{
+  width:300rpx;
+  height: 300rpx;
+  border-radius: 80%;
+  overflow: hidden;
+  margin-left: 0.3cm;
+}
+/*学习文字*/
+.studyText {
+  margin-top: 0.2cm;
+  margin-left:0.8cm;
+  color:rgb(101, 101, 104);
+}
+/*竞赛*/
+.competitionIcon {
+  width:300rpx;
+  height: 300rpx;
+  border-radius: 80%;
+  overflow: hidden;
+  margin-right: 0.3cm;
+}
+/*竞赛文字*/
+.competitionText {
+  margin-top: 0.2cm;
+  margin-left:0.6cm;
+  color:rgb(101, 101, 104);
+}
+
+/*公共控制模块*/
+.defaultCommonDiv {
+  background-color: rgba(23, 24, 23, 0.068);
+  width: 200%;
+  height: 7%;
+  position:fixed;
+  bottom:0px;
+  display: flex;
+}
+
+/*跳转到主页*/
+.mainPageBtn {
+  margin-top: 50%;
+  font-size:100%;
+  margin-left: 60px;
+  bottom: 0px;
+  color:rgb(101, 101, 104);
+  font-size:130%;
+}
+
+.myPageBtn {
+  margin-bottom: 0px;
+  font-size:100%;
+  margin-left: 100px;
+  color:rgb(101, 101, 104);
+  font-size:130%;
+}

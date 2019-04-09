@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/test/test",
+    "pages/userPage/userPage",
+    "pages/evaluatePage/evaluate",
+    "pages/newNeedsManager/newNeedsManager",
+    "pages/userNeedsManager/userNeedsManager",
+    "pages/editUser/editUser",
+    "pages/addNew/addNew",
+    "pages/logs/logs",
+    "pages/emptyPage/emptyShow",
+    "pages/editNeeds/editNeeds",
+    "pages/needsDetails/needsDetails",
+    "pages/messagePage/messagePage",
+    "pages/applyMessageList/applyMessageList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "RuiDer专属",
+    "navigationBarTextStyle": "black",
+    "backgroundColorBottom": "#ffffff",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#f0145a"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/messagePage/messagePage",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/userPage/userPage",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
+}

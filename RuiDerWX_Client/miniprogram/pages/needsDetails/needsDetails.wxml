@@ -1,0 +1,30 @@
+<view class="table">
+      <view class="table-th">[{{item.title}}]</view>
+      <view class="table-th">{{item.content}} </view>
+      <view class="table-th">Time: {{item.startTime}} ~ {{item.deadline}}</view>
+      <view class="table-th">人数限制: {{item.limitNo}}人</view>
+      <view class="table-th">当前人数: {{item.joinNo}}</view>
+      <view class="table-th">qq: [{{item.qq}}]</view>
+      <view class="table-th">微信: [{{item.weChat}}]</view>
+      <view class="table-tg">
+        <view class='table-tl'>
+          <view class="table-ti" bindtap='editNeeds' data-id='{{item.id}}' wx:if='{{item.userId==userId}}'>编辑</view>
+          <view class="table-ti" bindtap='deleteNeeds' data-id='{{item.id}}' wx:if='{{item.userId==userId}}'>删除</view>
+          <view class="table-ti" bindtap='evaluate' data-item='{{item}}' data-id='2'>评论</view>
+          <view wx:if='{{item.userId != userId}}'>
+              <view class="table-ti" wx:if='{{item.isOverTime == 1}}'>已过期</view>
+              <view class="table-ti" bindtap='evaluate' data-item='{{item}}' data-id='1' wx:elif='{{item.joinNo < item.limitNo}}'>申请加入>></view>
+              <view class="table-ti"  wx:else>人员已满</view>
+          </view>
+        </view>
+      </view>
+      <view wx:for='{{evaluateList}}' wx:key='id' class='table-tg'>
+          <view class='evaluates'>{{item.userNickName}}: {{item.content}}</view>
+          <view wx:if='{{item.replyMessage != null}}'>
+              <view wx:for='{{item.replyMessage}}' wx:key='id'>
+                  <view>{{item.userNickName}} 回复 {{item.masterNickName}}：{{item.content}}</view>
+              </view>
+          </view>
+      </view>
+</view>
+

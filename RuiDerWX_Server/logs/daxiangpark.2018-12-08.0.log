@@ -1,0 +1,90 @@
+2018-12-08 00:39:33.071 [main] INFO  com.ruider.Application-Starting Application on admindeMacBook-Pro.local with PID 8487 (/Users/mahede/ruider/MyProject/RuiDerWX/target/classes started by mahede in /Users/mahede/ruider/MyProject/RuiDerWX)
+2018-12-08 00:39:33.074 [main] INFO  com.ruider.Application-No active profile set, falling back to default profiles: default
+2018-12-08 00:39:33.656 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 00:39:33.658 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-12-08 00:39:33.683 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2018-12-08 00:39:33.945 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7cadda67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 00:39:34.218 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2018-12-08 00:39:34.240 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2018-12-08 00:39:34.244 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2018-12-08 00:39:34.245 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-08 00:39:34.250 [main] INFO  org.apache.catalina.core.AprLifecycleListener-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/mahede/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-08 00:39:34.316 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2018-12-08 00:39:34.316 [main] INFO  org.springframework.web.context.ContextLoader-Root WebApplicationContext: initialization completed in 1180 ms
+2018-12-08 00:39:34.349 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean-Servlet dispatcherServlet mapped to [/]
+2018-12-08 00:39:34.352 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean-Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-08 00:39:34.353 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-08 00:39:34.353 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean-Mapping filter: 'formContentFilter' to: [/*]
+2018-12-08 00:39:34.353 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean-Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-08 00:39:34.353 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean-Mapping filter: 'com.ruider.filter.XssFilter' to urls: [/*]
+2018-12-08 00:39:34.694 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor-Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-08 00:39:35.106 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2018-12-08 00:39:35.128 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool-Using a shared selector for servlet write/read
+2018-12-08 00:39:35.139 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-08 00:39:35.143 [main] INFO  com.ruider.Application-Started Application in 2.589 seconds (JVM running for 3.14)
+2018-12-08 00:40:39.661 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-08 00:40:39.661 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2018-12-08 00:40:39.667 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 5 ms
+2018-12-08 00:40:39.671 [http-nio-8080-exec-1] INFO  com.ruider.filter.XssFilter-【自定义过滤器】 doFilter
+2018-12-08 00:40:39.737 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController-addUserInfoIfNoSaved start
+2018-12-08 00:40:39.750 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2018-12-08 00:40:39.751 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource-Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2018-12-08 00:40:40.040 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2018-12-08 00:40:40.073 [http-nio-8080-exec-1] INFO  com.ruider.controller.UserController-【用户信息已存在】addUserInfoIfNoSaved fail
+2018-12-08 00:42:37.376 [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor-Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-08 00:42:37.377 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2018-12-08 00:42:37.389 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2018-12-08 00:51:56.459 [main] ERROR org.springframework.boot.SpringApplication-Application run failed
+java.lang.IllegalStateException: java.io.FileNotFoundException: /logback.xml (No such file or directory)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:302)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:263)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:199)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.ruider.Application.main(Application.java:21)
+Caused by: java.io.FileNotFoundException: /logback.xml (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at java.net.URL.openStream(URL.java:1045)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:294)
+	... 14 common frames omitted
+2018-12-08 00:53:00.014 [main] ERROR org.springframework.boot.SpringApplication-Application run failed
+java.lang.IllegalStateException: java.io.FileNotFoundException: /logback.xml (No such file or directory)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:302)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:263)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:199)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.ruider.Application.main(Application.java:21)
+Caused by: java.io.FileNotFoundException: /logback.xml (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at java.net.URL.openStream(URL.java:1045)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:294)
+	... 14 common frames omitted

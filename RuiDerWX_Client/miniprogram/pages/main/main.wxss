@@ -1,0 +1,34 @@
+.container{
+  background-color:floralwhite;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.streamView{
+  height: 3.5cm;
+  margin:0px;
+  position: absolute;
+  top: 0cm;
+  right: 0.6cm;
+}
+
+.categoryList{
+  width:100%;
+  height: 1cm;
+  display:flex;
+  background-color:rgb(234, 236, 236);
+  position:absolute; 
+  margin: 0cm;
+  top:3.5cm;
+}
+.group{
+  margin-left: 0.8cm;
+}
+
+.hotSpot{
+  height: 10cm;
+  position: absolute;
+  bottom: 0cm;
+  right: 0.38cm;
+}

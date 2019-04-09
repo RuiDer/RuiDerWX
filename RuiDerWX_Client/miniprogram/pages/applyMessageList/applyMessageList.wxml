@@ -1,0 +1,39 @@
+<view class='container'>
+  <view class="table-tr">
+    <block wx:for='{{messageList}}' wx:key='id' class='applyMessageBlock'>
+          <view class='timeShow' wx:if='{{item.categoryId==1 || item.categoryId==2}}'>{{item.createTime}}</view>
+          <view class='needInfo'>
+              <view class="table-th">[{{item.title}}]</view>
+              <view class="table-th">{{item.needsContent}} </view>
+              <view class="table-th">Time: {{item.startTime}} ~ {{item.deadline}}</view>
+              <view class="table-th">人数限制: {{item.limitNo}}人</view>
+              <view class="table-th">当前人数: {{item.joinNo}}</view>
+          </view>
+          <view wx:if='{{item.categoryId==1}}'>{{item.userNickName}} 申请加入</view>
+          <view wx:if='{{item.categoryId==2 && item.isReply == 1}}'>{{item.userNickName}}：{{item.messageContent}}</view>
+          <view wx:if='{{item.replyMessages != null}} && {{item.categoryId==2}}'>
+              <view wx:for='{{item.replyMessages}}' wx:key='id'>
+                  <view>{{item.userNickName}} 回复 {{item.masterNickName}}：{{item.content}}</view>
+              </view>
+          </view>
+          <view wx:if='{{item.categoryId==1}}'>申请描述：{{item.messageContent}}</view>
+          <view wx:if='{{item.categoryId==3}}'>
+            <button class='alreadyOverTime'>已过期</button>
+          </view>
+          <view wx:if='{{item.categoryId==4}}'>
+            <button class='alreadyOverNumber'>人员已满</button>
+          </view>
+          <view class='approveOrRefuse' wx:if='{{item.isApproved == 0}}'>
+              <button class='approve' bindtap='approveOrRefuse' data-id='{{item.id}}' data-isapproved='2' wx:if='{{item.categoryId==1}}'>同意</button>
+              <button class='refuse' bindtap='approveOrRefuse' data-id='{{item.id}}' data-isapproved='1' wx:if='{{item.categoryId==1}}'>拒绝</button>
+              <button class='approveOrRefuse' bindtap='reply' data-id='{{item.id}}' data-categoryid='2' data-item='{{item}}' wx:if='{{item.categoryId==2}}'>回复</button>
+          </view>
+          <view class='approveOrRefuse' wx:if='{{item.isApproved == 1}}'>
+              <button class='refused'>已拒绝</button>
+          </view> 
+          <view class='approveOrRefuse' wx:if='{{item.isApproved == 2}}'>
+              <button class='approved'>已同意</button>
+          </view>    
+    </block>
+  </view>
+</view>
